@@ -1,6 +1,6 @@
 const createElements = (arr) => {
   const htmlElements = arr.map((el) => `<span class="btn">${el}</span>`);
-  return htmlElements.join("";)
+  return htmlElements.join("");
 };
 
 const manageSpinner = (status) => {
@@ -79,8 +79,10 @@ const displayWordDetails = (word) => {
           </div>
           <div class="">
             <h2 class="font-bold">Synonym</h2>
-            <div class=""
-          </div>`;
+            <div class="">${createElements(word.synonyms)}</div>
+          </div>
+          
+          `;
   document.getElementById("word_mode").showModal();
 };
 
